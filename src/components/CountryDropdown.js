@@ -31,7 +31,11 @@ const CountryDropdown = () => {
       <ul className='bg-red-100'>
         {countries.map((country, index) => {
           return (
-            <li onClick={() => setText(country)} key={index}>
+            <li
+              onClick={() => setText(country)}
+              key={index}
+              className='cursor-pointer hover:text-red-500'
+            >
               {country}
             </li>
           );
