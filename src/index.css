@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  .input {
-    @apply;
+  .dropdown {
+    @apply w-full h-full bg-yellow-300 border rounded-lg;
   }
 }

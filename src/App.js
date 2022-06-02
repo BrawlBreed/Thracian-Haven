@@ -1,17 +1,12 @@
 import React from 'react';
 
-// import data
-import { houses } from './data.js';
-
 // import components
-import SearchForm from './components/SearchForm.js';
-
-console.log(houses);
+import Search from './components/Search';
 
 const App = () => {
   return (
-    <div className='container mx-auto'>
-      <SearchForm />
+    <div>
+      <Search />
     </div>
   );
 };
