@@ -11,14 +11,17 @@ const CountryDropdown = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    const filteredCountries = houses.map((house) => {
+    // return only countries
+    const allCountries = houses.map((house) => {
       return house.country;
     });
-    const uniqueCountries = ['Location - (ANY)', ...new Set(filteredCountries)];
+
+    // remove duplicates
+    const uniqueCountries = ['Location - (ANY)', ...new Set(allCountries)];
+
+    // set countries state
     setCountries(uniqueCountries);
   }, []);
-
-  console.log(countries);
 
   return (
     <div className='dropdown'>
