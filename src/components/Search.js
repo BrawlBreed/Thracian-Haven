@@ -7,7 +7,7 @@ import PriceRangeDropdown from './PriceRangeDropdown';
 
 const Search = () => {
   return (
-    <div>
+    <div className='px-[30px] py-6 max-w-[1170px] mx-auto flex justify-between'>
       <CountryDropdown />
       <PropertyDropdown />
       <PriceRangeDropdown />
