@@ -5,7 +5,7 @@ import { HouseContext } from './HouseContext';
 
 const HouseList = () => {
   const { houses } = useContext(HouseContext);
-  console.log(houses);
+
   return (
     <div className='container mx-auto'>
       {houses.map((house, index) => {
