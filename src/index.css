@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-primary;
+  }
   .dropdown {
     @apply w-full max-w-[296px] cursor-pointer;
   }
   .dropdown-btn {
-    @apply flex h-[64px] items-center px-[18px] bg-yellow-200 border rounded-lg;
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
   }
   .dropdown-icon-primary {
     @apply text-2xl mr-[18px] text-violet-700;
   }
   .dropdown-icon-secondary {
-    @apply text-2xl mr-[18px] text-violet-700 ml-auto bg-red-500;
+    @apply text-2xl text-violet-700 ml-auto;
   }
   .dropdown-menu {
-    @apply bg-green-400;
+    @apply p-[18px] text-sm space-y-3 shadow-md bg-white;
   }
 }

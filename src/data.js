@@ -1,7 +1,7 @@
 export const houses = [
   {
     id: 1,
-    type: 'house',
+    type: 'House',
     name: 'House 1',
     country: 'United States',
     address: '7240C Argyle St. Lawndale, CA 90260',
@@ -13,7 +13,7 @@ export const houses = [
   },
   {
     id: 2,
-    type: 'house',
+    type: 'House',
     name: 'House 2',
     country: 'Canada',
     address: '798 Talbot St. Bridgewater, NJ 08807',
@@ -25,7 +25,7 @@ export const houses = [
   },
   {
     id: 3,
-    type: 'house',
+    type: 'House',
     name: 'House 3',
     country: 'United States',
     address: '2 Glen Creek St. Alexandria, VA 22304',
@@ -37,7 +37,7 @@ export const houses = [
   },
   {
     id: 4,
-    type: 'house',
+    type: 'House',
     name: 'House 4',
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -49,7 +49,7 @@ export const houses = [
   },
   {
     id: 5,
-    type: 'house',
+    type: 'House',
     name: 'House 5',
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -61,7 +61,7 @@ export const houses = [
   },
   {
     id: 6,
-    type: 'house',
+    type: 'House',
     name: 'House 6',
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',

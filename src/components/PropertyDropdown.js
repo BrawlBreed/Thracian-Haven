@@ -4,33 +4,33 @@ import React, { useState, useEffect } from 'react';
 import { houses } from '../data';
 
 // import icon
-import { RiMapPinLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
-const CountryDropdown = () => {
-  const [text, setText] = useState('Location (any)');
-  const [countries, setCountries] = useState([]);
+const PropertyDropdown = () => {
+  const [text, setText] = useState('Property type (any)');
+  const [properties, setProperties] = useState([]);
   const [dropdown, setDropdown] = useState(false);
 
   useEffect(() => {
     // return only countries
-    const allCountries = houses.map((house) => {
-      return house.country;
+    const allProperties = houses.map((house) => {
+      return house.type;
     });
 
     // remove duplicates
-    const uniqueCountries = ['Location (any)', ...new Set(allCountries)];
+    const uniqueProperties = ['Property type (any)', ...new Set(allProperties)];
 
     // set countries state
-    setCountries(uniqueCountries);
+    setProperties(uniqueProperties);
   }, []);
 
   return (
     <div className='dropdown'>
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
-        <RiMapPinLine className='dropdown-icon-primary' />
+        <RiHome5Line className='dropdown-icon-primary' />
         <div>
           <div className='text-[15px] font-medium leading-tight'>{text}</div>
-          <div className='text-[13px]'>Select your place</div>
+          <div className='text-[13px]'>Choose property type</div>
         </div>
         {dropdown ? (
           <RiArrowUpSLine className='dropdown-icon-secondary' />
@@ -40,14 +40,14 @@ const CountryDropdown = () => {
       </div>
       {dropdown && (
         <ul className='dropdown-menu'>
-          {countries.map((country, index) => {
+          {properties.map((property, index) => {
             return (
               <li
-                onClick={() => setText(country)}
+                onClick={() => setText(property)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >
-                {country}
+                {property}
               </li>
             );
           })}
@@ -57,4 +57,4 @@ const CountryDropdown = () => {
   );
 };
 
-export default CountryDropdown;
+export default PropertyDropdown;
