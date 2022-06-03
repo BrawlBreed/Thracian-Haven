@@ -50,7 +50,11 @@ const HouseContextProvider = ({ children }) => {
       return house.country === country;
     });
 
-    setHouses(newHouses);
+    if (newHouses.length === 0) {
+      setHouses(housesData);
+    } else {
+      setHouses(newHouses);
+    }
   };
   console.log(houses);
 
@@ -66,6 +70,7 @@ const HouseContextProvider = ({ children }) => {
         price,
         setPrice,
         handleClick,
+        houses,
       }}
     >
       {children}
