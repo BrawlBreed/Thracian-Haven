@@ -47,7 +47,7 @@ const HouseContextProvider = ({ children }) => {
   const handleClick = () => {
     console.log(country, property, price);
     const newHouses = housesData.filter((house) => {
-      return house.country === country;
+      return house.country === country && house.type === property;
     });
 
     if (newHouses.length === 0) {
