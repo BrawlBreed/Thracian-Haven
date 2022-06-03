@@ -12,20 +12,19 @@ const PriceRangeDropdown = () => {
 
   const priceRange = [
     {
-      min: 100000,
-      max: 130000,
+      value: 'Price range (any)',
     },
     {
-      min: 130000,
-      max: 160000,
+      value: '100,000 - 130,000',
     },
     {
-      min: 160000,
-      max: 190000,
+      value: '130,000 - 160,000',
     },
     {
-      min: 200000,
-      max: 230000,
+      value: '160,000 - 190,000',
+    },
+    {
+      value: '190,000 - 220,000',
     },
   ];
 
@@ -48,11 +47,11 @@ const PriceRangeDropdown = () => {
           {priceRange.map((price, index) => {
             return (
               <li
-                onClick={() => setText(`${price.min} $ - ${price.max} $`)}
+                onClick={() => setText(price.value)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >
-                Between {price.min} - {price.max}
+                Between {price.value}
               </li>
             );
           })}
