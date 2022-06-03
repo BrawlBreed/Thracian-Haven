@@ -10,21 +10,21 @@ const PriceRangeDropdown = () => {
   const [text, setText] = useState('Price range (any)');
   const [dropdown, setDropdown] = useState(false);
 
-  const priceRange = [
+  const prices = [
     {
       value: 'Price range (any)',
     },
     {
-      value: '100,000 - 130,000',
+      value: '$100,000 - $130,000',
     },
     {
-      value: '130,000 - 160,000',
+      value: '$130,000 - $160,000',
     },
     {
-      value: '160,000 - 190,000',
+      value: '$160,000 - $190,000',
     },
     {
-      value: '190,000 - 220,000',
+      value: '$190,000 - $220,000',
     },
   ];
 
@@ -44,14 +44,14 @@ const PriceRangeDropdown = () => {
       </div>
       {dropdown && (
         <ul className='dropdown-menu'>
-          {priceRange.map((price, index) => {
+          {prices.map((price, index) => {
             return (
               <li
                 onClick={() => setText(price.value)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >
-                Between {price.value}
+                {price.value}
               </li>
             );
           })}
