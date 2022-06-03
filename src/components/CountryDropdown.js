@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
-// import data
-import { houses } from '../data';
-
-// import icon
+// import icons
 import { RiMapPinLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
+// import context
+import { HouseContext } from './HouseContext';
+
 const CountryDropdown = () => {
-  const [country, setCountry] = useState('Location (any)');
-  const [countries, setCountries] = useState([]);
+  const { country, setCountry, countries } = useContext(HouseContext);
   const [dropdown, setDropdown] = useState(false);
-
-  useEffect(() => {
-    // return only countries
-    const allCountries = houses.map((house) => {
-      return house.country;
-    });
-
-    // remove duplicates
-    const uniqueCountries = ['Location (any)', ...new Set(allCountries)];
-
-    // set countries state
-    setCountries(uniqueCountries);
-  }, []);
 
   return (
     <div className='dropdown'>

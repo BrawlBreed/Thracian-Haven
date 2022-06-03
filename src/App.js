@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { HouseContext } from './components/HouseContext';
 
 // import components
 import Search from './components/Search';

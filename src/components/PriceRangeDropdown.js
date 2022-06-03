@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
-// import icon
+// import icons
 import {
   RiWallet3Line,
   RiArrowDownSLine,
   RiArrowUpSLine,
 } from 'react-icons/ri';
 
-const PriceRangeDropdown = () => {
-  const [text, setText] = useState('Price range (any)');
-  const [dropdown, setDropdown] = useState(false);
+// import context
+import { HouseContext } from './HouseContext';
 
+const PriceRangeDropdown = () => {
+  const { price, setPrice } = useContext(HouseContext);
+  const [dropdown, setDropdown] = useState(false);
   const prices = [
     {
       value: 'Price range (any)',
@@ -34,7 +36,7 @@ const PriceRangeDropdown = () => {
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
         <RiWallet3Line className='dropdown-icon-primary' />
         <div>
-          <div className='text-[15px] font-medium leading-tight'>{text}</div>
+          <div className='text-[15px] font-medium leading-tight'>{price}</div>
           <div className='text-[13px]'>Choose price range</div>
         </div>
         {dropdown ? (
@@ -48,7 +50,7 @@ const PriceRangeDropdown = () => {
           {prices.map((price, index) => {
             return (
               <li
-                onClick={() => setText(price.value)}
+                onClick={() => setPrice(price.value)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >
