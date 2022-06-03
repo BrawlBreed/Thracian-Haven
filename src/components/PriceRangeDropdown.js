@@ -4,7 +4,11 @@ import React, { useState, useEffect } from 'react';
 import { houses } from '../data';
 
 // import icon
-import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
+import {
+  RiWallet3Line,
+  RiArrowDownSLine,
+  RiArrowUpSLine,
+} from 'react-icons/ri';
 
 const PriceRangeDropdown = () => {
   const [text, setText] = useState('Price range (any)');
@@ -31,7 +35,7 @@ const PriceRangeDropdown = () => {
   return (
     <div className='dropdown'>
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
-        <RiHome5Line className='dropdown-icon-primary' />
+        <RiWallet3Line className='dropdown-icon-primary' />
         <div>
           <div className='text-[15px] font-medium leading-tight'>{text}</div>
           <div className='text-[13px]'>Choose price range</div>
