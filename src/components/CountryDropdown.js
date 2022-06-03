@@ -31,7 +31,7 @@ const CountryDropdown = () => {
               <li
                 onClick={() => setCountry(country)}
                 key={index}
-                className='cursor-pointer hover:text-red-500'
+                className='cursor-pointer hover:text-violet-700 transition'
               >
                 {country}
               </li>
