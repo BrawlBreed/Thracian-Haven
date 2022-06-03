@@ -42,6 +42,10 @@ const HouseContextProvider = ({ children }) => {
     setProperties(uniqueProperties);
   }, []);
 
+  const handleClick = () => {
+    console.log(country, property, price);
+  };
+
   return (
     <HouseContext.Provider
       value={{
@@ -53,6 +57,7 @@ const HouseContextProvider = ({ children }) => {
         properties,
         price,
         setPrice,
+        handleClick,
       }}
     >
       {children}
