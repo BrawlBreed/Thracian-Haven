@@ -7,7 +7,7 @@ import { houses } from '../data';
 import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 const PropertyDropdown = () => {
-  const [text, setText] = useState('Property type (any)');
+  const [property, setProperty] = useState('Property type (any)');
   const [properties, setProperties] = useState([]);
   const [dropdown, setDropdown] = useState(false);
 
@@ -29,7 +29,9 @@ const PropertyDropdown = () => {
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
         <RiHome5Line className='dropdown-icon-primary' />
         <div>
-          <div className='text-[15px] font-medium leading-tight'>{text}</div>
+          <div className='text-[15px] font-medium leading-tight'>
+            {property}
+          </div>
           <div className='text-[13px]'>Choose property type</div>
         </div>
         {dropdown ? (
@@ -43,7 +45,7 @@ const PropertyDropdown = () => {
           {properties.map((property, index) => {
             return (
               <li
-                onClick={() => setText(property)}
+                onClick={() => setProperty(property)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >

@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// import data
-import { houses } from '../data';
-
 // import icon
 import {
   RiWallet3Line,

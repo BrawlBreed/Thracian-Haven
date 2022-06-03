@@ -7,7 +7,7 @@ import { houses } from '../data';
 import { RiMapPinLine, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 
 const CountryDropdown = () => {
-  const [text, setText] = useState('Location (any)');
+  const [country, setCountry] = useState('Location (any)');
   const [countries, setCountries] = useState([]);
   const [dropdown, setDropdown] = useState(false);
 
@@ -29,7 +29,7 @@ const CountryDropdown = () => {
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
         <RiMapPinLine className='dropdown-icon-primary' />
         <div>
-          <div className='text-[15px] font-medium leading-tight'>{text}</div>
+          <div className='text-[15px] font-medium leading-tight'>{country}</div>
           <div className='text-[13px]'>Select your place</div>
         </div>
         {dropdown ? (
@@ -43,7 +43,7 @@ const CountryDropdown = () => {
           {countries.map((country, index) => {
             return (
               <li
-                onClick={() => setText(country)}
+                onClick={() => setCountry(country)}
                 key={index}
                 className='cursor-pointer hover:text-red-500'
               >
