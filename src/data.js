@@ -1,4 +1,4 @@
-export const houses = [
+export const housesData = [
   {
     id: 1,
     type: 'House',

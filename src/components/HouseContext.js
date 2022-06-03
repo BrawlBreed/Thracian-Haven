@@ -1,13 +1,15 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 // import data
-import { houses } from '../data';
+import { housesData } from '../data';
 
 // create context
 export const HouseContext = createContext();
 
 // provider
 const HouseContextProvider = ({ children }) => {
+  const [houses, setHouses] = useState(housesData);
+
   const [country, setCountry] = useState('Location (any)');
   const [countries, setCountries] = useState([]);
 
@@ -44,7 +46,13 @@ const HouseContextProvider = ({ children }) => {
 
   const handleClick = () => {
     console.log(country, property, price);
+    const newHouses = housesData.filter((house) => {
+      return house.country === country;
+    });
+
+    setHouses(newHouses);
   };
+  console.log(houses);
 
   return (
     <HouseContext.Provider
