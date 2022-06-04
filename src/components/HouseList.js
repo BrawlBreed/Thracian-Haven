@@ -9,7 +9,12 @@ const HouseList = () => {
   return (
     <div className='container mx-auto'>
       {houses.map((house, index) => {
-        return <div key={index}>{house.country}</div>;
+        return (
+          <div key={index}>
+            <p className='text-sm'>{house.type}</p>
+            {house.country}
+          </div>
+        );
       })}
     </div>
   );
