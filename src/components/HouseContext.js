@@ -45,29 +45,47 @@ const HouseContextProvider = ({ children }) => {
   }, []);
 
   const handleClick = () => {
+    const isDefault = (str) => {
+      return str.split(' ').includes('(any)');
+    };
+
+    let newHouses;
+    // if a location is selected - but property is default and price is default - return all houses and apartments in that area
+    if (!isDefault(country) && isDefault(property) && isDefault(price)) {
+      newHouses = housesData.filter((house) => {
+        return house.country === country;
+      });
+    }
+
+    if (newHouses === undefined) {
+      setHouses(housesData);
+    } else {
+      setHouses(newHouses);
+    }
+
+    /* 
     const min = parseInt(price.split(' ')[0]);
     const max = parseInt(price.split(' ')[2]);
-
+    
     const newHouses = housesData.filter((house) => {
       if (
         house.price >= min &&
         house.price <= max &&
         house.country === country &&
         house.type === property
-      ) {
+        ) {
         return house;
       }
     });
-
     setHouses(newHouses);
-
+    
     const isDefault = (str) => {
       return str.split(' ').includes('(any)');
     };
-
+    
     if (isDefault(country) && isDefault(property) && isDefault(price)) {
       setHouses(housesData);
-    }
+    } */
   };
 
   return (
