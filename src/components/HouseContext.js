@@ -46,17 +46,17 @@ const HouseContextProvider = ({ children }) => {
 
   const handleClick = () => {
     console.log(country, property, price);
-    const newHouses = housesData.filter((house) => {
-      return house.country === country && house.type === property;
-    });
 
-    if (newHouses.length === 0) {
-      setHouses(housesData);
-    } else {
-      setHouses(newHouses);
-    }
+    const min = parseInt(price.split(' ')[0]);
+    const max = parseInt(price.split(' ')[2]);
+
+    const newHouses = housesData.filter((house) => {
+      if (house.price >= min && house.price <= max) {
+        return house;
+      }
+    });
+    setHouses(newHouses);
   };
-  console.log(houses);
 
   return (
     <HouseContext.Provider

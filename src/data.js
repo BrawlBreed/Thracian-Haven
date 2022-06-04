@@ -9,7 +9,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '110,000',
+    price: '110000',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '112,000',
+    price: '140000',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '124,000',
+    price: '170000',
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '132,000',
+    price: '200000',
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2015',
-    price: '160,000',
+    price: '210000',
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '6200 sq ft',
     year: '2014',
-    price: '220,000',
+    price: '220000',
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const housesData = [
     bathrooms: '1',
     surface: '1200 sq ft',
     year: '2012',
-    price: '20,000',
+    price: '20000',
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ export const housesData = [
     bathrooms: '1',
     surface: '1000 sq ft',
     year: '2011',
-    price: '23,000',
+    price: '30000',
   },
   {
     id: 9,
@@ -105,6 +105,6 @@ export const housesData = [
     bathrooms: '1',
     surface: '1100 sq ft',
     year: '2011',
-    price: '27,000',
+    price: '40000',
   },
 ];
