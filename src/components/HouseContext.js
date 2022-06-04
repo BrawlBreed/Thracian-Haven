@@ -58,7 +58,16 @@ const HouseContextProvider = ({ children }) => {
         return house;
       }
     });
+
     setHouses(newHouses);
+
+    const countryDefault = country.split(' ').includes('(any)');
+    const propertyDefault = property.split(' ').includes('(any)');
+    const priceDefault = country.split(' ').includes('(any)');
+
+    if (countryDefault && propertyDefault && priceDefault) {
+      alert('da');
+    }
   };
 
   return (
