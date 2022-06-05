@@ -11,7 +11,7 @@ const House = ({ house }) => {
         <div className='bg-green-500 rounded-full text-base text-white px-3 inline-block'>
           {house.type}
         </div>
-        <div className='bg-gray-400 rounded-full text-base text-white px-3 inline-block'>
+        <div className='bg-violet-500 rounded-full text-base text-white px-3 inline-block'>
           {house.country}
         </div>
       </div>
