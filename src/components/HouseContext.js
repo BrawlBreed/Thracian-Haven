@@ -52,7 +52,7 @@ const HouseContextProvider = ({ children }) => {
 
     const newHouses = housesData.filter((house) => {
       const housePrice = parseInt(house.price);
-      // if all values are selected
+      // all values are selected
       if (
         house.country === country &&
         house.type === property &&
