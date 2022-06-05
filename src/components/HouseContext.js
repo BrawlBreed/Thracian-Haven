@@ -44,49 +44,11 @@ const HouseContextProvider = ({ children }) => {
     setProperties(uniqueProperties);
   }, []);
 
-  const isDefault = (str) => {
-    return str.split(' ').includes('(any)');
-  };
-
-  /*   const handleCountry = () => {
-    let newHouses;
-
-    if (!isDefault(country) && isDefault(property) && isDefault(price)) {
-      newHouses = housesData.filter((house) => {
-        return house.country === country;
-      });
-    }
-
-    if (newHouses === undefined) {
-      setHouses(housesData);
-    } else {
-      setHouses(newHouses);
-    }
-  };
-
-  const handlePrice = () => {
-    let newHouses;
-    const min = parseInt(price.split(' ')[0]);
-    const max = parseInt(price.split(' ')[2]);
-
-    newHouses = housesData.filter((house) => {
-      if (house.price >= min && house.price <= max) {
-        return house;
-      }
-    });
-    setHouses(newHouses);
-  };
-
-  const handleProperty = () => {
-    let newHouses;
-    newHouses = housesData.filter((house) => {
-      return house.type === property;
-    });
-    setHouses(newHouses);
-  };
- */
   const handleClick = () => {
     // console.log(country, property, price);
+    const isDefault = (str) => {
+      return str.split(' ').includes('(any)');
+    };
 
     const minPrice = parseInt(price.split(' ')[0]);
     const maxPrice = parseInt(price.split(' ')[2]);
@@ -94,15 +56,20 @@ const HouseContextProvider = ({ children }) => {
     // return a single array
     const x = housesData.filter((house) => {
       const housePrice = parseInt(house.price);
-      return (
+      if (isDefault(country) && isDefault(property) && isDefault(price)) {
+        return house;
+      }
+      if (
         house.country === country &&
         house.type === property &&
         housePrice >= minPrice &&
         housePrice <= maxPrice
-      );
+      ) {
+        return house;
+      }
     });
 
-    console.log(x);
+    setHouses(x);
   };
 
   return (
