@@ -48,7 +48,7 @@ const HouseContextProvider = ({ children }) => {
     return str.split(' ').includes('(any)');
   };
 
-  const handleCountry = () => {
+  /*   const handleCountry = () => {
     let newHouses;
 
     if (!isDefault(country) && isDefault(property) && isDefault(price)) {
@@ -84,11 +84,25 @@ const HouseContextProvider = ({ children }) => {
     });
     setHouses(newHouses);
   };
-
+ */
   const handleClick = () => {
-    handleCountry();
-    handlePrice();
-    handleProperty();
+    // console.log(country, property, price);
+
+    const minPrice = parseInt(price.split(' ')[0]);
+    const maxPrice = parseInt(price.split(' ')[2]);
+
+    // return a single array
+    const x = housesData.filter((house) => {
+      const housePrice = parseInt(house.price);
+      return (
+        house.country === country &&
+        house.type === property &&
+        housePrice >= minPrice &&
+        housePrice <= maxPrice
+      );
+    });
+
+    console.log(x);
   };
 
   return (
