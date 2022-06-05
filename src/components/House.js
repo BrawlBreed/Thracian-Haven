@@ -7,8 +7,13 @@ const House = ({ house }) => {
   return (
     <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto'>
       <img className='mb-8' src={house.image} alt='' />
-      <div className='bg-green-500 rounded-full text-base text-white px-3 inline-block mb-2'>
-        {house.type}
+      <div className='mb-2 flex gap-x-2'>
+        <div className='bg-green-500 rounded-full text-base text-white px-3 inline-block'>
+          {house.type}
+        </div>
+        <div className='bg-gray-400 rounded-full text-base text-white px-3 inline-block'>
+          {house.country}
+        </div>
       </div>
       <div className='text-xl font-medium'>{house.address}</div>
       <div className='flex gap-x-4 my-4'>
