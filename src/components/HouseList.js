@@ -13,10 +13,11 @@ const HouseList = () => {
           return (
             <div
               key={index}
-              className='bg-pink-50 shadow-md p-5 rounded-lg rounded-tl-3xl'
+              className='bg-white shadow-lg p-5 rounded-lg rounded-tl-3xl'
             >
-              <p className='text-sm'>{house.type}</p>
-              {house.country}
+              <img src={house.image} alt='' />
+              <div className='text-sm'>{house.type}</div>
+              <div className='text-xl font-medium'>{house.country}</div>
             </div>
           );
         })}

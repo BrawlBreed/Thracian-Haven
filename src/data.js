@@ -1,8 +1,31 @@
+// import house images
+import House1 from './assets/img/house1.png';
+import House2 from './assets/img/house2.png';
+import House3 from './assets/img/house3.png';
+import House4 from './assets/img/house4.png';
+import House5 from './assets/img/house5.png';
+import House6 from './assets/img/house6.png';
+import House7 from './assets/img/house7.png';
+import House8 from './assets/img/house8.png';
+import House9 from './assets/img/house9.png';
+import House10 from './assets/img/house10.png';
+import House11 from './assets/img/house11.png';
+import House12 from './assets/img/house12.png';
+
+// import apartments images
+import Apartment1 from './assets/img/a1.png';
+import Apartment2 from './assets/img/a2.png';
+import Apartment3 from './assets/img/a3.png';
+import Apartment4 from './assets/img/a4.png';
+import Apartment5 from './assets/img/a5.png';
+import Apartment6 from './assets/img/a6.png';
+
 export const housesData = [
   {
     id: 1,
     type: 'House',
     name: 'House 1',
+    image: House1,
     country: 'United States',
     address: '7240C Argyle St. Lawndale, CA 90260',
     bedrooms: '6',
@@ -15,6 +38,7 @@ export const housesData = [
     id: 2,
     type: 'House',
     name: 'House 2',
+    image: House2,
     country: 'Canada',
     address: '798 Talbot St. Bridgewater, NJ 08807',
     bedrooms: '6',
@@ -27,6 +51,7 @@ export const housesData = [
     id: 3,
     type: 'House',
     name: 'House 3',
+    image: House3,
     country: 'United States',
     address: '2 Glen Creek St. Alexandria, VA 22304',
     bedrooms: '6',
@@ -39,6 +64,7 @@ export const housesData = [
     id: 4,
     type: 'House',
     name: 'House 4',
+    image: House4,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '6',
@@ -51,6 +77,7 @@ export const housesData = [
     id: 5,
     type: 'House',
     name: 'House 5',
+    image: House5,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '5',
@@ -63,6 +90,7 @@ export const housesData = [
     id: 6,
     type: 'House',
     name: 'House 6',
+    image: House6,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '6',
@@ -75,6 +103,7 @@ export const housesData = [
     id: 7,
     type: 'Apartament',
     name: 'Apartament 1',
+    image: Apartment1,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '2',
@@ -87,6 +116,7 @@ export const housesData = [
     id: 8,
     type: 'Apartament',
     name: 'Apartament 2',
+    image: Apartment2,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '3',
@@ -99,6 +129,7 @@ export const housesData = [
     id: 9,
     type: 'Apartament',
     name: 'Apartament 3',
+    image: Apartment3,
     country: 'United States',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '2',
@@ -110,7 +141,8 @@ export const housesData = [
   {
     id: 10,
     type: 'House',
-    name: 'House 10',
+    name: 'House 7',
+    image: House7,
     country: 'Canada',
     address: '7240C Argyle St. Lawndale, CA 90260',
     bedrooms: '5',
@@ -122,7 +154,8 @@ export const housesData = [
   {
     id: 11,
     type: 'House',
-    name: 'House 11',
+    name: 'House 8',
+    image: House8,
     country: 'Canada',
     address: '798 Talbot St. Bridgewater, NJ 08807',
     bedrooms: '7',
@@ -134,7 +167,8 @@ export const housesData = [
   {
     id: 12,
     type: 'House',
-    name: 'House 12',
+    name: 'House 9',
+    image: House9,
     country: 'United States',
     address: '2 Glen Creek St. Alexandria, VA 22304',
     bedrooms: '4',
@@ -146,7 +180,8 @@ export const housesData = [
   {
     id: 13,
     type: 'House',
-    name: 'House 13',
+    name: 'House 10',
+    image: House10,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '5',
@@ -158,7 +193,8 @@ export const housesData = [
   {
     id: 14,
     type: 'House',
-    name: 'House 14',
+    name: 'House 11',
+    image: House11,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '5',
@@ -170,7 +206,8 @@ export const housesData = [
   {
     id: 15,
     type: 'House',
-    name: 'House 6',
+    name: 'House 12',
+    image: House12,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '4',
@@ -183,6 +220,7 @@ export const housesData = [
     id: 16,
     type: 'Apartament',
     name: 'Apartament 16',
+    image: Apartment4,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
     bedrooms: '2',
@@ -195,6 +233,7 @@ export const housesData = [
     id: 17,
     type: 'Apartament',
     name: 'Apartament 17',
+    image: Apartment5,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
     bedrooms: '3',
@@ -207,6 +246,7 @@ export const housesData = [
     id: 18,
     type: 'Apartament',
     name: 'Apartament 18',
+    image: Apartment6,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
     bedrooms: '3',
