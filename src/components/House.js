@@ -5,8 +5,8 @@ import { BiBed, BiBath, BiArea } from 'react-icons/bi';
 
 const House = ({ house }) => {
   return (
-    <div className='bg-white shadow-lg p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto'>
-      <img className='mb-4' src={house.image} alt='' />
+    <div className='bg-white shadow-1 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto'>
+      <img className='mb-8' src={house.image} alt='' />
       <div className='bg-green-500 rounded-full text-base text-white px-3 inline-block mb-2'>
         {house.type}
       </div>
