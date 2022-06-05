@@ -69,7 +69,8 @@ const HouseContextProvider = ({ children }) => {
       }
     });
 
-    setHouses(x);
+    // create a showMessage function to render a "Nothing found" message to the screen
+    return x.length === 0 ? alert('Nothing found') : setHouses(x);
   };
 
   return (
