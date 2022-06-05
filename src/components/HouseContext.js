@@ -50,7 +50,7 @@ const HouseContextProvider = ({ children }) => {
     const minPrice = parseInt(price.split(' ')[0]);
     const maxPrice = parseInt(price.split(' ')[2]);
 
-    const x = housesData.filter((house) => {
+    const newHouses = housesData.filter((house) => {
       const housePrice = parseInt(house.price);
       // if all values are selected
       if (
@@ -61,35 +61,35 @@ const HouseContextProvider = ({ children }) => {
       ) {
         return house;
       }
-      // if all values are default
+      // all values are default
       if (isDefault(country) && isDefault(property) && isDefault(price)) {
         return house;
       }
-      // if country is not default
+      // country is not default
       if (!isDefault(country) && isDefault(property) && isDefault(price)) {
         return house.country === country;
       }
-      // if property is not default
+      // property is not default
       if (!isDefault(property) && isDefault(country) && isDefault(price)) {
         return house.type === property;
       }
-      // if price is not default
+      // price is not default
       if (!isDefault(price) && isDefault(country) && isDefault(property)) {
         if (housePrice >= minPrice && housePrice <= maxPrice) {
           return house;
         }
       }
-      // if country and property is not default
+      // country and property is not default
       if (!isDefault(country) && !isDefault(property) && isDefault(price)) {
         return house.country === country && house.type === property;
       }
-      // if country and price is not default
+      // country and price is not default
       if (!isDefault(country) && isDefault(property) && !isDefault(price)) {
         if (housePrice >= minPrice && housePrice <= maxPrice) {
           return house.country === country;
         }
       }
-      // if property and price is not default
+      // property and price is not default
       if (isDefault(country) && !isDefault(property) && !isDefault(price)) {
         if (housePrice >= minPrice && housePrice <= maxPrice) {
           return house.type === property;
@@ -98,7 +98,9 @@ const HouseContextProvider = ({ children }) => {
     });
 
     // create a showMessage function to render a "Nothing found" message to the screen
-    return x.length === 0 ? alert('Nothing found') : setHouses(x);
+    return newHouses.length === 0
+      ? alert('Nothing found')
+      : setHouses(newHouses);
   };
 
   return (
