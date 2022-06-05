@@ -44,13 +44,13 @@ const HouseContextProvider = ({ children }) => {
     setProperties(uniqueProperties);
   }, []);
 
-  const handleClick = () => {
-    const isDefault = (str) => {
-      return str.split(' ').includes('(any)');
-    };
+  const isDefault = (str) => {
+    return str.split(' ').includes('(any)');
+  };
 
+  const handleCountry = () => {
     let newHouses;
-    // if a location is selected - but property is default and price is default - return all houses and apartments in that area
+
     if (!isDefault(country) && isDefault(property) && isDefault(price)) {
       newHouses = housesData.filter((house) => {
         return house.country === country;
@@ -62,30 +62,33 @@ const HouseContextProvider = ({ children }) => {
     } else {
       setHouses(newHouses);
     }
+  };
 
-    /* 
+  const handlePrice = () => {
+    let newHouses;
     const min = parseInt(price.split(' ')[0]);
     const max = parseInt(price.split(' ')[2]);
-    
-    const newHouses = housesData.filter((house) => {
-      if (
-        house.price >= min &&
-        house.price <= max &&
-        house.country === country &&
-        house.type === property
-        ) {
+
+    newHouses = housesData.filter((house) => {
+      if (house.price >= min && house.price <= max) {
         return house;
       }
     });
     setHouses(newHouses);
-    
-    const isDefault = (str) => {
-      return str.split(' ').includes('(any)');
-    };
-    
-    if (isDefault(country) && isDefault(property) && isDefault(price)) {
-      setHouses(housesData);
-    } */
+  };
+
+  const handleProperty = () => {
+    let newHouses;
+    newHouses = housesData.filter((house) => {
+      return house.type === property;
+    });
+    setHouses(newHouses);
+  };
+
+  const handleClick = () => {
+    handleCountry();
+    handlePrice();
+    handleProperty();
   };
 
   return (
