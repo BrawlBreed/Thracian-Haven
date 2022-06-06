@@ -1,15 +1,17 @@
 import React from 'react';
 
-// import components
-import Search from './components/Search';
-import HouseList from './components/HouseList';
+import { Routes, Route } from 'react-router-dom';
+
+// import pages
+import Home from './pages/Home';
+import PropertyDetails from './pages/PropertyDetails';
 
 const App = () => {
   return (
-    <div>
-      <Search />
-      <HouseList />
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/property/:id' element={<PropertyDetails />} />
+    </Routes>
   );
 };
 
