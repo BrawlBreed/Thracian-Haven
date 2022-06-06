@@ -52,7 +52,7 @@ const PriceRangeDropdown = () => {
         )}
       </div>
       {dropdown && (
-        <ul className='dropdown-menu absolute w-full'>
+        <ul className='dropdown-menu absolute w-full bg-white z-10'>
           {prices.map((price, index) => {
             return (
               <li

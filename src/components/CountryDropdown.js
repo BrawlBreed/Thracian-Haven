@@ -25,7 +25,7 @@ const CountryDropdown = () => {
         )}
       </div>
       {dropdown && (
-        <ul className='dropdown-menu absolute w-full'>
+        <ul className='dropdown-menu absolute w-full bg-white z-10'>
           {countries.map((country, index) => {
             return (
               <li

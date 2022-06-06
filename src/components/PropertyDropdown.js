@@ -26,7 +26,7 @@ const PropertyDropdown = () => {
         )}
       </div>
       {dropdown && (
-        <ul className='dropdown-menu absolute w-full'>
+        <ul className='dropdown-menu absolute w-full bg-white z-10'>
           {properties.map((property, index) => {
             return (
               <li
