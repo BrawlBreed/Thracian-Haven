@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-primary;
+    @apply font-primary bg-slate-100;
   }
   .dropdown {
     @apply w-full max-w-[296px] cursor-pointer;

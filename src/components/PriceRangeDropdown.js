@@ -38,7 +38,7 @@ const PriceRangeDropdown = () => {
   ];
 
   return (
-    <div className='dropdown'>
+    <div className='dropdown relative'>
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
         <RiWallet3Line className='dropdown-icon-primary' />
         <div>
@@ -52,7 +52,7 @@ const PriceRangeDropdown = () => {
         )}
       </div>
       {dropdown && (
-        <ul className='dropdown-menu'>
+        <ul className='dropdown-menu absolute w-full'>
           {prices.map((price, index) => {
             return (
               <li

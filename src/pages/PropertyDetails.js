@@ -29,12 +29,10 @@ const PropertyDetails = () => {
               {property.country}
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod neque,
-            saepe natus et odio maiores voluptas, accusamus id ex eligendi earum
-            repellat cum labore suscipit quos cupiditate ea explicabo
-            reprehenderit?
-          </p>
+          <p>{property.description}</p>
+          <div>$ {property.price}</div>
+          <div>{property.agent.name}</div>
+          <div>{property.agent.phone}</div>
         </div>
       </div>
     </div>

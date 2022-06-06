@@ -25,6 +25,8 @@ export const housesData = [
     id: 1,
     type: 'House',
     name: 'House 1',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House1,
     country: 'United States',
     address: '7240C Argyle St. Lawndale, CA 90260',
@@ -33,11 +35,17 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2016',
     price: '110000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 2,
     type: 'House',
     name: 'House 2',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House2,
     country: 'Canada',
     address: '798 Talbot St. Bridgewater, NJ 08807',
@@ -46,11 +54,17 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2016',
     price: '140000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 3,
     type: 'House',
     name: 'House 3',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House3,
     country: 'United States',
     address: '2 Glen Creek St. Alexandria, VA 22304',
@@ -59,11 +73,17 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2016',
     price: '170000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 4,
     type: 'House',
     name: 'House 4',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House4,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -72,11 +92,17 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2016',
     price: '200000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 5,
     type: 'House',
     name: 'House 5',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House5,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -85,11 +111,17 @@ export const housesData = [
     surface: '4200 sq ft',
     year: '2015',
     price: '210000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 6,
     type: 'House',
     name: 'House 6',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House6,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
@@ -98,11 +130,17 @@ export const housesData = [
     surface: '6200 sq ft',
     year: '2014',
     price: '220000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 7,
     type: 'Apartament',
     name: 'Apartament 1',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment1,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
@@ -111,11 +149,18 @@ export const housesData = [
     surface: '1200 sq ft',
     year: '2012',
     price: '20000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 8,
     type: 'Apartament',
     name: 'Apartament 2',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment2,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -124,11 +169,18 @@ export const housesData = [
     surface: '1000 sq ft',
     year: '2011',
     price: '30000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 9,
     type: 'Apartament',
     name: 'Apartament 3',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment3,
     country: 'United States',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -137,11 +189,18 @@ export const housesData = [
     surface: '1100 sq ft',
     year: '2011',
     price: '40000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 10,
     type: 'House',
     name: 'House 7',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House7,
     country: 'Canada',
     address: '7240C Argyle St. Lawndale, CA 90260',
@@ -150,11 +209,17 @@ export const housesData = [
     surface: '3200 sq ft',
     year: '2015',
     price: '117000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 11,
     type: 'House',
     name: 'House 8',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House8,
     country: 'Canada',
     address: '798 Talbot St. Bridgewater, NJ 08807',
@@ -163,11 +228,17 @@ export const housesData = [
     surface: '2200 sq ft',
     year: '2019',
     price: '145000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 12,
     type: 'House',
     name: 'House 9',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House9,
     country: 'United States',
     address: '2 Glen Creek St. Alexandria, VA 22304',
@@ -176,11 +247,17 @@ export const housesData = [
     surface: '4600 sq ft',
     year: '2015',
     price: '139000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 13,
     type: 'House',
     name: 'House 10',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House10,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -189,11 +266,17 @@ export const housesData = [
     surface: '5200 sq ft',
     year: '2014',
     price: '180000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 14,
     type: 'House',
     name: 'House 11',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House11,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -202,11 +285,17 @@ export const housesData = [
     surface: '3200 sq ft',
     year: '2011',
     price: '213000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 15,
     type: 'House',
     name: 'House 12',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House12,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
@@ -215,11 +304,17 @@ export const housesData = [
     surface: '5200 sq ft',
     year: '2013',
     price: '221000',
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 16,
     type: 'Apartament',
     name: 'Apartament 16',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment4,
     country: 'Canada',
     address: '32 Pawnee Street Butte, MT 59701',
@@ -228,11 +323,18 @@ export const housesData = [
     surface: '1300 sq ft',
     year: '2011',
     price: '21000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 17,
     type: 'Apartament',
     name: 'Apartament 17',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment5,
     country: 'United States',
     address: '28 Westport Dr. Warminster, PA 18974',
@@ -241,11 +343,18 @@ export const housesData = [
     surface: '1000 sq ft',
     year: '2012',
     price: '32000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
   {
     id: 18,
     type: 'Apartament',
     name: 'Apartament 18',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment6,
     country: 'Canada',
     address: '84 Woodland St. Cocoa, FL 32927',
@@ -254,5 +363,10 @@ export const housesData = [
     surface: '1200 sq ft',
     year: '2010',
     price: '38000',
+
+    agent: {
+      name: 'Jhon Doe',
+      phone: '0123 456 78910',
+    },
   },
 ];

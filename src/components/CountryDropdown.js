@@ -11,7 +11,7 @@ const CountryDropdown = () => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className='dropdown'>
+    <div className='dropdown relative'>
       <div onClick={() => setDropdown(!dropdown)} className='dropdown-btn'>
         <RiMapPinLine className='dropdown-icon-primary' />
         <div>
@@ -25,7 +25,7 @@ const CountryDropdown = () => {
         )}
       </div>
       {dropdown && (
-        <ul className='dropdown-menu'>
+        <ul className='dropdown-menu absolute w-full'>
           {countries.map((country, index) => {
             return (
               <li
