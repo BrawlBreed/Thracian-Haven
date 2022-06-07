@@ -42,12 +42,14 @@ const HouseContextProvider = ({ children }) => {
   }, []);
 
   const handleClick = () => {
-    // console.log(country, property, price);
+    // check the string if includes '(any)'
     const isDefault = (str) => {
       return str.split(' ').includes('(any)');
     };
 
+    // get first string (price) and parse it to number
     const minPrice = parseInt(price.split(' ')[0]);
+    // get last string (price) and parse it to number
     const maxPrice = parseInt(price.split(' ')[2]);
 
     const newHouses = housesData.filter((house) => {
