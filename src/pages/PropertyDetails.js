@@ -2,9 +2,10 @@ import React from 'react';
 
 // import houseData
 import { housesData } from '../data';
-
-// import useParams
+//  useParams
 import { useParams } from 'react-router-dom';
+// import icons
+import { BiBed, BiBath, BiArea } from 'react-icons/bi';
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -30,11 +31,37 @@ const PropertyDetails = () => {
             </div>
           </div>
           <p>{property.description}</p>
-          <div>$ {property.price}</div>
+          <div className='text-2xl font-semibold text-violet-600 mb-4'>
+            $ {property.price}
+          </div>
+          <img className='w-20 h-20' src={property.agent.image}></img>
           <div>{property.agent.name}</div>
           <div>{property.agent.phone}</div>
         </div>
       </div>
+      {/* <div className='flex gap-x-4 my-4'>
+        <div className='flex items-center text-gray-600 gap-1'>
+          <div className='text-[20px] rounded-full'>
+            <BiBed />
+          </div>
+          <div className='text-base'>{prope.bedrooms}</div>
+        </div>
+        <div className='flex items-center text-gray-600 gap-1'>
+          <div className='text-[20px] rounded-full'>
+            <BiBath />
+          </div>
+          <div className='text-base'>{prope.bathrooms}</div>
+        </div>
+        <div className='flex items-center text-gray-600 gap-1'>
+          <div className='text-[20px] rounded-full'>
+            <BiArea />
+          </div>
+          <div className='text-base'>{prope.surface}</div>
+        </div>
+      </div>
+      <div className='text-lg font-semibold text-violet-600 mb-4'>
+        $ {prope.price}
+      </div> */}
     </div>
   );
 };

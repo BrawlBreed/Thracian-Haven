@@ -20,6 +20,20 @@ import Apartment4 from './assets/img/a4.png';
 import Apartment5 from './assets/img/a5.png';
 import Apartment6 from './assets/img/a6.png';
 
+// import agents images
+import Agent1 from './assets/img/agents/agent1.png';
+import Agent2 from './assets/img/agents/agent2.png';
+import Agent3 from './assets/img/agents/agent3.png';
+import Agent4 from './assets/img/agents/agent4.png';
+import Agent5 from './assets/img/agents/agent5.png';
+import Agent6 from './assets/img/agents/agent6.png';
+import Agent7 from './assets/img/agents/agent7.png';
+import Agent8 from './assets/img/agents/agent8.png';
+import Agent9 from './assets/img/agents/agent9.png';
+import Agent10 from './assets/img/agents/agent10.png';
+import Agent11 from './assets/img/agents/agent11.png';
+import Agent12 from './assets/img/agents/agent12.png';
+
 export const housesData = [
   {
     id: 1,
@@ -36,6 +50,7 @@ export const housesData = [
     year: '2016',
     price: '110000',
     agent: {
+      image: Agent1,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -55,6 +70,7 @@ export const housesData = [
     year: '2016',
     price: '140000',
     agent: {
+      image: Agent2,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -74,6 +90,7 @@ export const housesData = [
     year: '2016',
     price: '170000',
     agent: {
+      image: Agent3,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -93,6 +110,7 @@ export const housesData = [
     year: '2016',
     price: '200000',
     agent: {
+      image: Agent4,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -112,6 +130,7 @@ export const housesData = [
     year: '2015',
     price: '210000',
     agent: {
+      image: Agent5,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -131,6 +150,7 @@ export const housesData = [
     year: '2014',
     price: '220000',
     agent: {
+      image: Agent6,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -151,6 +171,7 @@ export const housesData = [
     price: '20000',
 
     agent: {
+      image: Agent7,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -171,6 +192,7 @@ export const housesData = [
     price: '30000',
 
     agent: {
+      image: Agent8,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -191,6 +213,7 @@ export const housesData = [
     price: '40000',
 
     agent: {
+      image: Agent9,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -210,6 +233,7 @@ export const housesData = [
     year: '2015',
     price: '117000',
     agent: {
+      image: Agent10,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -229,6 +253,7 @@ export const housesData = [
     year: '2019',
     price: '145000',
     agent: {
+      image: Agent11,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -248,6 +273,7 @@ export const housesData = [
     year: '2015',
     price: '139000',
     agent: {
+      image: Agent12,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -267,6 +293,7 @@ export const housesData = [
     year: '2014',
     price: '180000',
     agent: {
+      image: Agent1,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -286,6 +313,7 @@ export const housesData = [
     year: '2011',
     price: '213000',
     agent: {
+      image: Agent2,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -305,6 +333,7 @@ export const housesData = [
     year: '2013',
     price: '221000',
     agent: {
+      image: Agent3,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -325,6 +354,7 @@ export const housesData = [
     price: '21000',
 
     agent: {
+      image: Agent4,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -345,6 +375,7 @@ export const housesData = [
     price: '32000',
 
     agent: {
+      image: Agent5,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
@@ -365,6 +396,7 @@ export const housesData = [
     price: '38000',
 
     agent: {
+      image: Agent6,
       name: 'Jhon Doe',
       phone: '0123 456 78910',
     },
