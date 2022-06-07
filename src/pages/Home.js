@@ -6,10 +6,10 @@ import Banner from '../components/Banner';
 
 const Home = () => {
   return (
-    <div className='max-w-[1440px] mx-auto bg-white'>
+    <>
       <Banner />
       <HouseList />
-    </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import Search from '../components/Search';
 
 const Banner = () => {
   return (
-    <section className='h-full max-h-[640px] mb-52'>
+    <section className='h-full max-h-[640px] mb-32'>
       <div className='flex flex-col lg:flex-row'>
         <div className='lg:ml-[135px] flex items-center flex-1'>
           <h1 className='text-[58px] font-semibold leading-none'>
