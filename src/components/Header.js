@@ -18,7 +18,7 @@ const Header = () => {
             Log in
           </Link>
           <Link
-            className='bg-violet-700 hover:bg-violet-800 text-white px-6 py-3 rounded-lg transition'
+            className='bg-violet-700 hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition'
             to='/'
           >
             Sign up
