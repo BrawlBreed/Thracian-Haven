@@ -14,6 +14,7 @@ const HouseContextProvider = ({ children }) => {
   const [property, setProperty] = useState('Property type (any)');
   const [properties, setProperties] = useState([]);
   const [price, setPrice] = useState('Price range (any)');
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // return all countries
@@ -42,6 +43,7 @@ const HouseContextProvider = ({ children }) => {
   }, []);
 
   const handleClick = () => {
+    setIsLoading(true);
     // check the string if includes '(any)'
     const isDefault = (str) => {
       return str.split(' ').includes('(any)');
@@ -100,7 +102,12 @@ const HouseContextProvider = ({ children }) => {
     });
 
     // create a showMessage function to render a "Nothing found" message to the screen
-    return newHouses.length < 1 ? alert('Nothing found') : setHouses(newHouses);
+    setTimeout(() => {
+      return (
+        newHouses.length < 1 ? alert('Nothing found') : setHouses(newHouses),
+        setIsLoading(false)
+      );
+    }, 1000);
   };
 
   return (
@@ -116,6 +123,7 @@ const HouseContextProvider = ({ children }) => {
         setPrice,
         handleClick,
         houses,
+        isLoading,
       }}
     >
       {children}
