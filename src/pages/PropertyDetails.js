@@ -49,8 +49,9 @@ const PropertyDetails = () => {
           <p>{property.description}</p>
         </div>
         <div className='flex-1 bg-blue-200'>
-          <div className='text-2xl font-semibold text-violet-600 mb-4'>
-            $ {property.price}
+          <div className='bg-violet-600 text-white py-4 mb-4 flex justify-center items-center gap-2'>
+            <div className='text-xl font-medium'>$ {property.price}</div>
+            <div>/ year</div>
           </div>
           <img className='w-20 h-20' src={property.agent.image}></img>
           <div>{property.agent.name}</div>
