@@ -14,7 +14,7 @@ const PropertyDetails = () => {
   });
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto min-h-[800px]'>
       <div className='flex flex-col gap-6 lg:flex-row'>
         <div>
           <img src={property.image} alt='' />
