@@ -39,29 +39,6 @@ const PropertyDetails = () => {
           <div>{property.agent.phone}</div>
         </div>
       </div>
-      {/* <div className='flex gap-x-4 my-4'>
-        <div className='flex items-center text-gray-600 gap-1'>
-          <div className='text-[20px] rounded-full'>
-            <BiBed />
-          </div>
-          <div className='text-base'>{prope.bedrooms}</div>
-        </div>
-        <div className='flex items-center text-gray-600 gap-1'>
-          <div className='text-[20px] rounded-full'>
-            <BiBath />
-          </div>
-          <div className='text-base'>{prope.bathrooms}</div>
-        </div>
-        <div className='flex items-center text-gray-600 gap-1'>
-          <div className='text-[20px] rounded-full'>
-            <BiArea />
-          </div>
-          <div className='text-base'>{prope.surface}</div>
-        </div>
-      </div>
-      <div className='text-lg font-semibold text-violet-600 mb-4'>
-        $ {prope.price}
-      </div> */}
     </div>
   );
 };
