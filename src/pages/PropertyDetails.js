@@ -15,22 +15,26 @@ const PropertyDetails = () => {
 
   return (
     <div className='container mx-auto min-h-[800px]'>
-      <div className='flex flex-col gap-6 lg:flex-row'>
-        <div>
-          <img src={property.image} alt='' />
-        </div>
-        <div className='flex-1'>
-          <h2 className='text-2xl font-semibold'>{property.name}</h2>
-          <h3 className='text-lg mb-4'>{property.address}</h3>
-          <div className='mb-2 flex gap-x-2 text-base'>
-            <div className='bg-green-500 rounded-full text-white px-3 inline-block'>
-              {property.type}
+      <div className='flex flex-col gap-8 lg:flex-row'>
+        <div className='max-w-[768px]'>
+          <div className='flex flex-col lg:flex-row lg:items-center justify-between'>
+            <div>
+              <h2 className='text-2xl font-semibold'>{property.name}</h2>
+              <h3 className='text-lg mb-4'>{property.address}</h3>
             </div>
-            <div className='bg-violet-500 rounded-full text-white px-3 inline-block'>
-              {property.country}
+            <div className='mb-2 flex gap-x-2 text-base'>
+              <div className='bg-green-500 rounded-full text-white px-3 inline-block'>
+                {property.type}
+              </div>
+              <div className='bg-violet-500 rounded-full text-white px-3 inline-block'>
+                {property.country}
+              </div>
             </div>
           </div>
+          <img className='mb-8' src={property.imageLg} alt='' />
           <p>{property.description}</p>
+        </div>
+        <div className='flex-1'>
           <div className='text-2xl font-semibold text-violet-600 mb-4'>
             $ {property.price}
           </div>
