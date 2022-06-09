@@ -18,6 +18,14 @@ const HouseList = () => {
     );
   }
 
+  if (houses.length < 1) {
+    return (
+      <div className='text-center text-3xl text-gray-400 mt-48'>
+        Sorry, nothing was found.
+      </div>
+    );
+  }
+
   return (
     <div className='container mx-auto'>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-14'>
