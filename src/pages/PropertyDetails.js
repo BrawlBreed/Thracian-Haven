@@ -22,7 +22,7 @@ const PropertyDetails = () => {
           <h2 className='text-2xl font-semibold'>{property.name}</h2>
           <h3 className='text-lg mb-4'>{property.address}</h3>
         </div>
-        <div className='flex gap-x-2 text-sm'>
+        <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
           <div className='bg-green-500 rounded-full text-white px-3 inline-block'>
             {property.type}
           </div>
