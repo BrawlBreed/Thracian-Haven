@@ -54,7 +54,8 @@ const PropertyDetails = () => {
           </div>
           <p>{property.description}</p>
         </div>
-        <div className='flex-1 bg-white shadow-sm p-4'>
+        <div className='flex-1 bg-white shadow-lg p-4'>
+          <h3 className='text-2xl font-semibold mb-4'>Contact Realtor</h3>
           <div className='flex items-center gap-x-2 mb-4'>
             <div className='w-20 h-20 p-1 border rounded-full'>
               <img src={property.agent.image}></img>
