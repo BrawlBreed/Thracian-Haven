@@ -72,7 +72,7 @@ export const housesData = [
     price: '110000',
     agent: {
       image: Agent1,
-      name: 'Jhon Doe',
+      name: 'Patricia Tullert',
       phone: '0123 456 78910',
     },
   },
@@ -93,7 +93,7 @@ export const housesData = [
     price: '140000',
     agent: {
       image: Agent2,
-      name: 'Jhon Doe',
+      name: 'Daryl Hawker',
       phone: '0123 456 78910',
     },
   },
@@ -114,7 +114,7 @@ export const housesData = [
     price: '170000',
     agent: {
       image: Agent3,
-      name: 'Jhon Doe',
+      name: 'Amado Smith',
       phone: '0123 456 78910',
     },
   },
@@ -135,7 +135,7 @@ export const housesData = [
     price: '200000',
     agent: {
       image: Agent4,
-      name: 'Jhon Doe',
+      name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
     },
   },
@@ -156,7 +156,7 @@ export const housesData = [
     price: '210000',
     agent: {
       image: Agent5,
-      name: 'Jhon Doe',
+      name: 'Grover Robinson',
       phone: '0123 456 78910',
     },
   },
@@ -177,7 +177,7 @@ export const housesData = [
     price: '220000',
     agent: {
       image: Agent6,
-      name: 'Jhon Doe',
+      name: 'Karen Sorensen',
       phone: '0123 456 78910',
     },
   },
@@ -198,7 +198,7 @@ export const housesData = [
     price: '20000',
     agent: {
       image: Agent7,
-      name: 'Jhon Doe',
+      name: 'Jawhar Shamil Naser',
       phone: '0123 456 78910',
     },
   },
@@ -219,7 +219,7 @@ export const housesData = [
     price: '30000',
     agent: {
       image: Agent8,
-      name: 'Jhon Doe',
+      name: 'Juana Douglass',
       phone: '0123 456 78910',
     },
   },
@@ -240,7 +240,7 @@ export const housesData = [
     price: '40000',
     agent: {
       image: Agent9,
-      name: 'Jhon Doe',
+      name: 'Jerry Schenck',
       phone: '0123 456 78910',
     },
   },
@@ -261,7 +261,7 @@ export const housesData = [
     price: '117000',
     agent: {
       image: Agent10,
-      name: 'Jhon Doe',
+      name: 'Vera Levesque',
       phone: '0123 456 78910',
     },
   },
@@ -282,7 +282,7 @@ export const housesData = [
     price: '145000',
     agent: {
       image: Agent11,
-      name: 'Jhon Doe',
+      name: 'Sofia Gomes',
       phone: '0123 456 78910',
     },
   },
@@ -303,7 +303,7 @@ export const housesData = [
     price: '139000',
     agent: {
       image: Agent12,
-      name: 'Jhon Doe',
+      name: 'Raymond Hood',
       phone: '0123 456 78910',
     },
   },
