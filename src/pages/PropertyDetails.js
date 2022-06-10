@@ -22,7 +22,7 @@ const PropertyDetails = () => {
           <h2 className='text-2xl font-semibold'>{property.name}</h2>
           <h3 className='text-lg mb-4'>{property.address}</h3>
         </div>
-        <div className='mb-2 flex gap-x-2 text-sm'>
+        <div className='flex gap-x-2 text-sm'>
           <div className='bg-green-500 rounded-full text-white px-3 inline-block'>
             {property.type}
           </div>
@@ -30,7 +30,9 @@ const PropertyDetails = () => {
             {property.country}
           </div>
         </div>
-        <div className='text-3xl font-semibold'>$ {property.price}</div>
+        <div className='text-3xl font-semibold text-violet-600'>
+          $ {property.price}
+        </div>
       </div>
       <div className='flex flex-col items-start gap-8 lg:flex-row'>
         <div className='max-w-[768px]'>
