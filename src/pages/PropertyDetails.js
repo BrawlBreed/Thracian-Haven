@@ -15,7 +15,7 @@ const PropertyDetails = () => {
 
   return (
     <div className='container mx-auto min-h-[800px]'>
-      <div className='flex flex-col gap-8 lg:flex-row'>
+      <div className='flex flex-col items-start gap-8 lg:flex-row'>
         <div className='max-w-[768px]'>
           <div className='flex flex-col lg:flex-row lg:items-center justify-between'>
             <div>
@@ -33,7 +33,7 @@ const PropertyDetails = () => {
           </div>
           <div className='mb-8 relative'>
             <img src={property.imageLg} alt='' />
-            <div className='bg-violet-600 text-white py-2 flex justify-center items-center gap-2 absolute top-0 right-0 w-1/4'>
+            <div className='bg-violet-600 text-white px-4 py-2 flex justify-center items-center gap-2 absolute top-0 right-0'>
               <div className='text-xl'>$ {property.price}</div>
               <div>/ year</div>
             </div>
@@ -54,7 +54,7 @@ const PropertyDetails = () => {
           </div>
           <p>{property.description}</p>
         </div>
-        <div className='flex-1 bg-white shadow-lg px-6 py-8 min-h-max'>
+        <div className='flex-1 w-full mb-8 bg-white border px-6 py-8 lg:mt-[75px]'>
           <h3 className='text-2xl font-semibold mb-4'>Contact Realtor</h3>
           <div className='flex items-center gap-x-2 mb-4'>
             <div className='w-20 h-20 p-1 border rounded-full'>
