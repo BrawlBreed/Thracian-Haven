@@ -54,7 +54,7 @@ const PropertyDetails = () => {
           </div>
           <p>{property.description}</p>
         </div>
-        <div className='flex-1 bg-white shadow-lg p-4'>
+        <div className='flex-1 bg-white shadow-lg px-6 py-8 min-h-max'>
           <h3 className='text-2xl font-semibold mb-4'>Contact Realtor</h3>
           <div className='flex items-center gap-x-2 mb-4'>
             <div className='w-20 h-20 p-1 border rounded-full'>
@@ -70,21 +70,31 @@ const PropertyDetails = () => {
           </div>
           <form className='flex flex-col gap-y-4'>
             <input
-              className='border rounded w-full px-4 h-12 text-sm outline-none'
+              className='border rounded w-full px-4 h-14 text-sm outline-none'
               type='text'
               placeholder='Name*'
             />
             <input
-              className='border rounded w-full px-4 h-12 text-sm outline-none'
+              className='border rounded w-full px-4 h-14 text-sm outline-none'
               type='text'
               placeholder='Email*'
             />
             <input
-              className='border rounded w-full px-4 h-12 text-sm outline-none'
+              className='border rounded w-full px-4 h-14 text-sm outline-none'
               type='text'
               placeholder='Phone*'
             />
-            <textarea type='text' placeholder='Message*' />
+            <textarea
+              className='border rounded w-full p-4 h-36 text-sm outline-none resize-none'
+              type='text'
+              placeholder='Message*'
+            />
+            <button
+              className='bg-violet-700 text-white rounded p-4'
+              type='submit'
+            >
+              Send message
+            </button>
           </form>
         </div>
       </div>
