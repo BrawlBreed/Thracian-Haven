@@ -6,7 +6,7 @@ import { housesData } from '../data';
 import { useParams } from 'react-router-dom';
 // import icons
 import { BiBed, BiBath, BiArea, BiPhone } from 'react-icons/bi';
-// import ling
+// import link
 import { Link } from 'react-router-dom';
 
 const PropertyDetails = () => {
@@ -17,7 +17,7 @@ const PropertyDetails = () => {
 
   return (
     <div className='container mx-auto min-h-[800px] mb-14'>
-      <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6'>
+      <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
         <div>
           <h2 className='text-2xl font-semibold'>{property.name}</h2>
           <h3 className='text-lg mb-4'>{property.address}</h3>
