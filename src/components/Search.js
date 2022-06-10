@@ -10,7 +10,6 @@ import { HouseContext } from './HouseContext';
 
 // import icon
 import { RiSearch2Line } from 'react-icons/ri';
-import { ImSpinner2 } from 'react-icons/im';
 
 const Search = () => {
   const { handleClick } = useContext(HouseContext);
