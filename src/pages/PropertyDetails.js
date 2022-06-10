@@ -55,8 +55,10 @@ const PropertyDetails = () => {
           <p>{property.description}</p>
         </div>
         <div className='flex-1 w-full mb-8 bg-white border px-6 py-8 lg:mt-[75px]'>
-          <h3 className='text-2xl font-semibold mb-4'>Contact Realtor</h3>
-          <div className='flex items-center gap-x-2 mb-4'>
+          <h3 className='text-2xl font-semibold mb-6 text-center'>
+            Contact Realtor
+          </h3>
+          <div className='flex items-center gap-x-2 mb-8'>
             <div className='w-20 h-20 p-1 border rounded-full'>
               <img src={property.agent.image}></img>
             </div>
@@ -90,7 +92,7 @@ const PropertyDetails = () => {
               placeholder='Message*'
             />
             <button
-              className='bg-violet-700 text-white rounded p-4'
+              className='bg-violet-700 hover:bg-violet-800 text-white rounded p-4 transition'
               type='submit'
             >
               Send message
