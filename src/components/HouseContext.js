@@ -100,8 +100,7 @@ const HouseContextProvider = ({ children }) => {
         }
       }
     });
-
-    // create a showMessage function to render a "Nothing found" message to the screen
+    
     setTimeout(() => {
       return (
         newHouses.length < 1 ? setHouses([]) : setHouses(newHouses),
