@@ -1,13 +1,11 @@
 import React, { useState, useContext } from 'react';
-// import icons
 import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
-// import headless ui components
 import { Menu } from '@headlessui/react';
-// import context
-import { HouseContext } from './HouseContext';
+import { setProperty } from '../store/houses/housesSlice';
+import { useSelector } from 'react-redux';
 
 const PropertyDropdown = () => {
-  const { property, setProperty, properties } = useContext(HouseContext);
+  const { property, properties } = useSelector((state) => state.houses);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Menu as='div' className='dropdown relative'>

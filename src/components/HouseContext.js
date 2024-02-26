@@ -2,19 +2,19 @@ import React, { createContext, useState, useEffect } from 'react';
 
 // import data
 import { housesData } from '../data';
-
-// create context
-export const HouseContext = createContext();
+import { useSelector, useDispatch } from 'react-redux';
+import { setHouses } from '../store/houses/housesSlice';
 
 // provider
 const HouseContextProvider = ({ children }) => {
-  const [houses, setHouses] = useState(housesData);
+  // const [houses, setHouses] = useState(housesData);
   const [country, setCountry] = useState('Location (any)');
   const [countries, setCountries] = useState([]);
   const [property, setProperty] = useState('Property type (any)');
   const [properties, setProperties] = useState([]);
   const [price, setPrice] = useState('Price range (any)');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); 
+  const { houses } = useSelector((state) => state.houses);
 
   useEffect(() => {
     // return all countries
@@ -110,23 +110,24 @@ const HouseContextProvider = ({ children }) => {
   };
 
   return (
-    <HouseContext.Provider
-      value={{
-        country,
-        setCountry,
-        countries,
-        property,
-        setProperty,
-        properties,
-        price,
-        setPrice,
-        handleClick,
-        houses,
-        loading,
-      }}
-    >
-      {children}
-    </HouseContext.Provider>
+    <></>
+    // <HouseContext.Provider
+    //   value={{
+    //     country,
+    //     setCountry,
+    //     countries,
+    //     property,
+    //     setProperty,
+    //     properties,
+    //     price,
+    //     setPrice,
+    //     handleClick,
+    //     houses,
+    //     loading,
+    //   }}
+    // >
+    //   {children}
+    // </HouseContext.Provider>
   );
 };
 
