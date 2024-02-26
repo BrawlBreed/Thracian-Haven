@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 // import icons
 import { ImSpinner2 } from 'react-icons/im';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchHouses } from '../store/houses/housesAPI';
 
 const HouseList = () => {
   const { houses, loading, testHouses } = useSelector((state) => state.houses);
