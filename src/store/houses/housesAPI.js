@@ -4,9 +4,8 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 export const fetchHouses = createAsyncThunk(
   'houses/fetchHouses',
   async () => {
-    const response = await fetch('https://fd34-79-100-28-167.ngrok-free.app/');
+    const response = await fetch('https://virtserver.swaggerhub.com/ANTONIUSZLATIN/ASP_NET_CORE/1.0.0/inventory');
     const data = await response.json();
-    console.log('Data:', data);
     return data;
   }
 );

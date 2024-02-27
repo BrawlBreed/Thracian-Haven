@@ -2,7 +2,6 @@ import { createSlice, configureStore } from '@reduxjs/toolkit';
 import { housesData } from '../../data';
 import { fetchHouses } from './housesAPI';
 
-// 2. Define the initial state
 const initialState = {
   houses: housesData,
   testHouses: [],
@@ -14,7 +13,6 @@ const initialState = {
   loading: false,
 };
 
-// 3. Create a slice for the houses state
 const housesSlice = createSlice({
   name: 'houses',
   initialState,
@@ -59,7 +57,6 @@ const housesSlice = createSlice({
 
 });
 
-// 4. Export the actions
 export const {
   setHouses,
   setCountry,
@@ -68,7 +65,6 @@ export const {
   setProperties,
   setPrice,
   setLoading,
-  // Export other actions as needed
 } = housesSlice.actions;
 
 export default housesSlice.reducer;
